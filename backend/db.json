@@ -9,6 +9,11 @@
       "name": "Feijão ",
       "price": "10",
       "id": 3
+    },
+    {
+      "name": "Pão 1kg",
+      "price": "5",
+      "id": 4
     }
   ],
   "clients": [
@@ -56,6 +61,11 @@
       "name": "Leandro",
       "salario": 900,
       "id": 11
+    },
+    {
+      "name": "Andreia",
+      "salario": 2500,
+      "id": 12
     }
   ]
 }
