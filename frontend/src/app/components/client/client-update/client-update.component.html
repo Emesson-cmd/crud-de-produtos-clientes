@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Atualizar cliente</mat-card-title>
+    
+    <form>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Nome do cliente" 
+            [(ngModel)]="client.name" name="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input type="number" matInput placeholder="Salário do cliente" 
+            [(ngModel)]="client.salario" name="salario">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="atualziarCliente()" color="primary">
+        Atualziar cliente
+    </button>
+
+    <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+</mat-card>

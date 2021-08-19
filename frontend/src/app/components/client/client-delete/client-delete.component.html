@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-title>Excluir clientes</mat-card-title>
+    
+    <form>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Nome do cliente" 
+            [value]="client.name" name="name" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input type="number" matInput placeholder="Salário do cliente" 
+            [value]="client.salario" name="salario" disabled>
+        </mat-form-field>
+    </form>
+
+    <p> 
+        <i>Tem certeza que deseja excluir esse cliente?</i>
+    </p>
+
+    <button mat-raised-button (click)="deleteClient()" color="warn">
+        Excluir cliente
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+
+
+

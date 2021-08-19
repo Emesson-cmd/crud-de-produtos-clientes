@@ -1,0 +1,31 @@
+<!-- Estará vísível em localhost:4200/products/create -->
+
+<mat-card>
+    <mat-card-title>Novo produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <!-- [(ngModel)]="product.name" -> é a forma como 
+            nos pegamos o valor inserido no input e dizemos 
+            que ele será atribuido ao atributo nome do produto -->
+            <input matInput placeholder="Nome" 
+                [(ngModel)]="product.name" name="name" >
+        </mat-form-field>
+
+        <mat-form-field>
+            <!-- Na classe product-create.component.ts tem o Product
+            com o price. Então o valor pegado nesse imput será 
+            adicionado à ele -->
+            <input matInput placeholder="Preço (R$)"
+                [(ngModel)]="product.price" name="price">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createProduct()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

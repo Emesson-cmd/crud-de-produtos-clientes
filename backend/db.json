@@ -1,0 +1,61 @@
+{
+  "products": [
+    {
+      "name": "Queijo",
+      "price": "15.00",
+      "id": 2
+    },
+    {
+      "name": "Feijão ",
+      "price": "10",
+      "id": 3
+    }
+  ],
+  "clients": [
+    {
+      "name": "Pedro Marcos",
+      "salario": 850.56,
+      "id": 3
+    },
+    {
+      "name": "Guylherme",
+      "salario": 5200,
+      "id": 4
+    },
+    {
+      "name": "Guylh",
+      "salario": 96550,
+      "id": 5
+    },
+    {
+      "name": "Steve Jobs",
+      "salario": 5000000000,
+      "id": 6
+    },
+    {
+      "name": "Heaverty",
+      "salario": 65589,
+      "id": 7
+    },
+    {
+      "name": "Francisco Cavalcante",
+      "salario": 1500,
+      "id": 8
+    },
+    {
+      "name": "Valdenor",
+      "salario": 600,
+      "id": 9
+    },
+    {
+      "name": "Mariene",
+      "salario": 500,
+      "id": 10
+    },
+    {
+      "name": "Leandro",
+      "salario": 900,
+      "id": 11
+    }
+  ]
+}
