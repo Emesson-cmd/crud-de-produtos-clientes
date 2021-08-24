@@ -1,0 +1,16 @@
+<h2>Escolha o país e veja as cidades disponíveis: </h2>
+
+ <select [(ngModel)]="paisSelecionado.id" 
+         (change)="onSelect(paisSelecionado.id)" id="sel1">
+    <option value="0">--Selecione--</option>
+    <option *ngFor="let pais of paises" value= {{pais.id}}> {{pais.nome}} </option>
+ </select>
+
+ <br>
+
+ <div>
+  <select>
+    <option *ngIf='paisSelecionado.id == 0' value="0">--Selecione--</option>
+    <option *ngFor="let cidade of cidades" value= {{cidade.id}}> {{cidade.nome}} </option>
+  </select>
+ </div> 

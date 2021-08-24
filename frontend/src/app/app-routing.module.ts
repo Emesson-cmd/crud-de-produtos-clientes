@@ -11,13 +11,10 @@ import { ClientUpdateComponent } from './components/client/client-update/client-
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
 import { IdiomasComponent } from './views/idiomas/idiomas.component';
-import { LoginComponent } from './components/login/login.component';
+
+import { LstpaisesComponent } from './views/lstpaises/lstpaises.component'
 
 const routes: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent
-  },
   // Carrega tela do boas-vindas
   {
     path: '',
@@ -60,6 +57,10 @@ const routes: Routes = [
   {
     path: 'languages',
     component: IdiomasComponent
+  },
+  {
+    path: 'lstpaises',
+    component: LstpaisesComponent
   }
 ]
 @NgModule({

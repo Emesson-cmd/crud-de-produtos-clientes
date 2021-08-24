@@ -43,7 +43,7 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
 import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
 import { NgIfComponent } from './directives/ng-if/ng-if.component';
 import { IdiomasComponent } from './views/idiomas/idiomas.component';
-import { LoginComponent } from './components/login/login.component';
+import { LstpaisesComponent } from './views/lstpaises/lstpaises.component';
 
 registerLocaleData(localePt);
 
@@ -69,7 +69,7 @@ registerLocaleData(localePt);
     ClientDeleteComponent,
     NgIfComponent,
     IdiomasComponent,
-    LoginComponent
+    LstpaisesComponent
   ],
   imports: [
     BrowserModule,

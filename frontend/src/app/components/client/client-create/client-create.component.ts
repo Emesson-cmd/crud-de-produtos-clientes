@@ -13,7 +13,7 @@ export class ClientCreateComponent implements OnInit {
 
   client: Client = {
     name: '',
-    salario: null
+    salario: 0.00
   }
 
   constructor(private clientService: ClientService,
