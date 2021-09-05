@@ -1,3 +1,52 @@
+<form action="">
+  <input type="text" [(ngModel)]="meuExemploTexto">
+  <p>select abaixo</p>
+  <select [(ngModel)]="meuExemploTexto">
+    <option value="1">A</option>
+    <option value="2">B</option>
+  </select>
+  <button type="submit" onClick=""></button>
+</form>
+
+<hr>
+
+<h1>Como setar um valor inicial no select com ng-options</h1>
+
+<div>
+  <select *ngIf="selected" (change)="onChange($event.target)">
+    <option value="1">A</option>
+    <option value="2">B</option>
+  </select>
+</div>
+
+
+<div>
+  <script>
+      angular.module('starter', []).controller('testeController', function($scope){
+      $scope.bancos = [{id: 1, nome: 'bradesco' , codigo:0237}, {id: 2, nome: itau, codigo: 0235}]
+      });
+  </script>
+
+  <html ng-app = 'starter' >
+    <label class="item item-input item-select"  ng-controller='testeController'>
+    
+      <div class="input-label">Banco</div>
+
+      <select ng-options="banco as banco.nome for banco in bancos track by banco.id"  ng-model="dadosFinanceiros.banco" required>
+        <option value="">Escolha um banco</option>
+        <option value="">bradesco</option><!-- só coloquei isso pra selecionar um item para conseguir enviar a pergunta-->
+      </select> 
+
+    </label>
+  </html>
+
+  <button>Ver valor </button>
+
+</div>
+
+<br><br><br><br>
+
+
 <div>
     <select name="" id="">
         <!-- <option value="" disabled>Selecione o idioma</option> -->
@@ -6,6 +55,7 @@
         <option value="">Espanhol</option>
     </select>
 </div>
+
 
 <br><br><br><br>
 
