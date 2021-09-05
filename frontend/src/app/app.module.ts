@@ -44,6 +44,8 @@ import { ClientDeleteComponent } from './components/client/client-delete/client-
 import { NgIfComponent } from './directives/ng-if/ng-if.component';
 import { IdiomasComponent } from './views/idiomas/idiomas.component';
 import { LstpaisesComponent } from './views/lstpaises/lstpaises.component';
+import { ComponentePaiComponent } from './views/componente-pai/componente-pai.component';
+import { ComponenteFilhoComponent } from './views/componente-pai/componente-filho/componente-filho.component'
 
 registerLocaleData(localePt);
 
@@ -69,7 +71,9 @@ registerLocaleData(localePt);
     ClientDeleteComponent,
     NgIfComponent,
     IdiomasComponent,
-    LstpaisesComponent
+    LstpaisesComponent,
+    ComponentePaiComponent,
+    ComponenteFilhoComponent
   ],
   imports: [
     BrowserModule,

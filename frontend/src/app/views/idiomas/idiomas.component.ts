@@ -8,6 +8,10 @@ import { HeaderService } from 'src/app/components/template/header/header.service
 })
 export class IdiomasComponent implements OnInit {
 
+  meuExemploTexto: string = 'Esse é um exemplo de texto passado pelo [(ngModel)]';
+
+  selected = true;
+
   constructor(
     private headerService: HeaderService
   ) { 
@@ -20,5 +24,7 @@ export class IdiomasComponent implements OnInit {
 
   ngOnInit(): void {}
     
-
+  onChange(value: any): void {
+    console.log("onChange funciona! Valor apresentado: " + value)
+  }
 }

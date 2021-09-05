@@ -13,6 +13,7 @@ import { ClientDeleteComponent } from './components/client/client-delete/client-
 import { IdiomasComponent } from './views/idiomas/idiomas.component';
 
 import { LstpaisesComponent } from './views/lstpaises/lstpaises.component'
+import { ComponentePaiComponent } from './views/componente-pai/componente-pai.component';
 
 const routes: Routes = [
   // Carrega tela do boas-vindas
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path: 'lstpaises',
     component: LstpaisesComponent
+  },
+  {
+    path: 'componente-pai',
+    component: ComponentePaiComponent
   }
 ]
 @NgModule({
