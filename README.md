@@ -1,2 +1,2 @@
 # crud-de-produtos-clientes
-crud-de-produtos-clientes
+Um CRUD simples utilizando o Angular.
